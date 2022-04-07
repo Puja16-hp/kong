@@ -1582,7 +1582,7 @@ local function res_status(state, args)
       end
 
       local str_t = pl_stringx.splitlines(str)
-      local first_line = #str_t - math.min(60, #str_t) + 1
+      local first_line = 1
       local msg_t = {"\nError logs (" .. conf.nginx_err_logs .. "):"}
       for i = first_line, #str_t do
         msg_t[#msg_t+1] = str_t[i]
