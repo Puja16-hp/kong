@@ -60,7 +60,7 @@ if [ "$TEST_SUITE" == "plugins" ]; then
 
     if [[ "$TEST_SPLIT" == first* ]]; then
         # GitHub Actions, run first batch of plugin tests
-        PLUGINS=$(ls -d spec/03-plugins/* | head -n22)
+        PLUGINS=$(ls -d spec/03-plugins/23-rate-limiting)
 
     elif [[ "$TEST_SPLIT" == second* ]]; then
         # GitHub Actions, run second batch of plugin tests
